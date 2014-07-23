@@ -1,6 +1,6 @@
 ## install Xcode
-## ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ## xcode-select —install
+## ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ## save this file
 ## brew bundle
 
