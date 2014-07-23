@@ -1,0 +1,80 @@
+## install Xcode
+## ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+## xcode-select —install
+## save this file
+## brew bundle
+
+update  || true
+upgrade || true
+
+# tap
+tap homebrew/binary || true
+tap caskroom/cask   || true
+
+# cask
+install brew-cask   || true
+
+# language
+install rbenv       || true
+install ruby-build  || true
+install go          || true
+
+# scm
+install git         || true
+install hub         || true
+install tig         || true
+install mercurial   || true
+
+# shell
+install zsh         || true
+
+# editor
+install vim         || true
+install emacs       || true
+
+# utility
+install curl        || true
+install autoconf    || true
+install automake    || true
+install cmake       || true
+install tree        || true
+install tmux        || true
+install nkf         || true
+install wget        || true
+install readline    || true
+install openssl     || true
+install jq          || true
+install binutils    || true
+install coreutils   || true
+install lv          || true
+install ack         || true
+install pass        || true
+install s3cmd       || true
+install s3fs        || true
+install fping       || true
+install xz          || true
+
+# cask
+cask install iterm2          || true
+cask install java            || true
+cask install google-chrome   || true
+cask install hipchat         || true
+cask install vagrant         || true
+cask install alfred          || true 
+cask install dropbox         || true
+cask install virtualbox      || true
+cask install firefox         || true
+cask install appcleaner      || true
+cask install limechat        || true
+cask install vlc             || true
+cask install skype           || true
+
+# docker
+install boot2docker || true
+
+# middleware
+install mysql       || true
+install memcached   || true
+install redis       || true
+
+cleanup
