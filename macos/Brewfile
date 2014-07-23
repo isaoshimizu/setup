@@ -54,6 +54,9 @@ install s3fs        || true
 install fping       || true
 install xz          || true
 
+# font
+install ricty       || true
+
 # cask
 cask install iterm2          || true
 cask install java            || true
