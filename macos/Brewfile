@@ -3,81 +3,95 @@
 ## ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ## save this file
 ## brew bundle
+##
+## manual install:
+## Google日本語入力: http://www.google.co.jp/ime/
+## QuickLock http://www.quicklockapp.com/
 
-update  || true
-upgrade || true
+update
+upgrade
 
 # tap
-tap homebrew/binary || true
-tap caskroom/cask   || true
+tap homebrew/binary
+tap caskroom/cask
+tap caskroom/versions
 
 # cask
-install brew-cask   || true
+install brew-cask
 
 # language
-install rbenv       || true
-install ruby-build  || true
-install go          || true
+install rbenv
+install ruby-build
+install go
 
 # scm
-install git         || true
-install hub         || true
-install tig         || true
-install mercurial   || true
+install git
+install hub
+install tig
+install mercurial
 
 # shell
-install zsh         || true
+install zsh
 
 # editor
-install vim         || true
-install emacs       || true
+install vim
+install emacs
 
 # utility
-install curl        || true
-install autoconf    || true
-install automake    || true
-install cmake       || true
-install tree        || true
-install tmux        || true
-install nkf         || true
-install wget        || true
-install readline    || true
-install openssl     || true
-install jq          || true
-install binutils    || true
-install coreutils   || true
-install lv          || true
-install ack         || true
-install pass        || true
-install s3cmd       || true
-install s3fs        || true
-install fping       || true
-install xz          || true
+install curl
+install autoconf
+install automake
+install cmake
+install tree
+install tmux
+install nkf
+install wget
+install readline
+install openssl
+install jq
+install binutils
+install coreutils
+install lv
+install ack
+install pass
+install s3cmd
+install s3fs
+install fping
+install xz
+install ctags
+install awscli
 
 # font
-install ricty       || true
+install ricty
 
 # cask
-cask install iterm2          || true
-cask install java            || true
-cask install google-chrome   || true
-cask install hipchat         || true
-cask install vagrant         || true
-cask install alfred          || true 
-cask install dropbox         || true
-cask install virtualbox      || true
-cask install firefox         || true
-cask install appcleaner      || true
-cask install limechat        || true
-cask install vlc             || true
-cask install skype           || true
+cask install iterm2
+cask install java7
+cask install google-chrome
+cask install hipchat
+cask install vagrant
+cask install alfred
+cask install dropbox
+cask install virtualbox
+cask install firefox
+cask install appcleaner
+cask install limechat
+cask install vlc
+cask install skype
+cask install xtrafinder
+cask install evernote
+cask install skitch
 
 # docker
-install boot2docker || true
+install boot2docker
 
 # middleware
-install mysql       || true
-install memcached   || true
-install redis       || true
+install mysql
+install memcached
+install redis
 
+# alfred
+cask alfred link
+
+# cleanup
 cleanup
