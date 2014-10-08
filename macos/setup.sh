@@ -6,6 +6,7 @@
 
 if [ ! -d /Applications/Xcode.app ]; then
     echo "Please Install Xcode first."
+    exit
 fi
 
 xcode-select —install
