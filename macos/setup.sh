@@ -13,11 +13,8 @@ if [ ! -d /Applications/Xcode.app ]; then
     exit
 fi
 
-xcode-select —install
-
 # brew
-ruby -e "$(curl -fsSL
-https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew update
 brew upgrade
@@ -26,6 +23,8 @@ brew upgrade
 brew tap homebrew/binary
 # for Ricty
 brew tap sanemat/font
+# for java, sublime-text3
+brew tap caskroom/versions
 
 # cask
 brew install caskroom/cask/brew-cask
@@ -94,6 +93,8 @@ brew cask install evernote
 brew cask install skitch
 brew cask install sublime-text3
 brew cask install macvim
+brew cask install xquartz
+brew cask install wireshark
 
 # docker
 brew install boot2docker
@@ -102,9 +103,6 @@ brew install boot2docker
 brew install mysql
 brew install memcached
 brew install redis
-
-# alfred
-brew cask alfred link
 
 # cleanup
 brew cleanup
