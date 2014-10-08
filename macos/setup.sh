@@ -1,8 +1,12 @@
 #!/bin/sh
 
 ## manual install:
-## Google日本語入力: http://www.google.co.jp/ime/
-## QuickLock http://www.quicklockapp.com/
+# Google日本語入力: http://www.google.co.jp/ime/
+# QuickLock http://www.quicklockapp.com/
+## AppStore
+# LINE
+# Keynote
+
 
 if [ ! -d /Applications/Xcode.app ]; then
     echo "Please Install Xcode first."
@@ -87,6 +91,8 @@ brew cask install skype
 brew cask install xtrafinder
 brew cask install evernote
 brew cask install skitch
+brew cask install sublime-text3
+brew cask install macvim
 
 # docker
 brew install boot2docker
