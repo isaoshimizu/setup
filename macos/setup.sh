@@ -83,7 +83,7 @@ brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
 brew cask install virtualbox
-brew cask install firefox
+brew cask install firefox-ja
 brew cask install appcleaner
 brew cask install limechat
 brew cask install vlc
