@@ -95,6 +95,8 @@ brew cask install sublime-text3
 brew cask install macvim
 brew cask install xquartz
 brew cask install wireshark
+brew cask install onepassword
+brew cask install google-drive
 
 # docker
 brew install boot2docker
