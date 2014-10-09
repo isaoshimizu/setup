@@ -72,6 +72,7 @@ brew install awscli
 brew install reattach-to-user-namespace
 
 # font
+brew install fontforge
 brew install ricty
 
 # cask
@@ -119,3 +120,11 @@ if [ ! -d ~/.vim/bundle ]; then
     mkdir -p ~/.vim/bundle
 fi
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+
+mkdir ~/.zfunctions
+git clone https://github.com/sindresorhus/pure.git ~/pure
+ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
+
+# git config
+git config --global user.name "Isao SHIMIZU"
+git config --global user.email "isaoshimizu@gmail.com"
