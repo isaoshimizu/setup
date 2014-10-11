@@ -132,3 +132,15 @@ ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 # git config
 git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
+
+# my config
+git pull https://github.com/isaoshimizu/config ~/config
+cp -f ~/config/vimrc ~/.vimrc
+cp -Rf ~/config/vim ~/.vim
+cp -f ~/config/zshrc ~/.zshrc
+cp -f ~/config/dir_colors ~/.dir_colors
+cp -f ~/config/tmux.conf ~/.tmux.conf
+cp -f ~/config/my.cnf ~/.my.cnf
+
+# vim NeoBundleInstall
+vim +":NeoBundleInstall" +:q
