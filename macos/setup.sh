@@ -110,6 +110,10 @@ brew install redis
 # cleanup
 brew cleanup
 
+# ricty
+cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
+fc-cache -vf
+
 # rbenv
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # ruby-build
