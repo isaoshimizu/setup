@@ -132,6 +132,7 @@ ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 # git config
 git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
+git config --global push.default simple
 
 # my config
 git pull https://github.com/isaoshimizu/config ~/config
