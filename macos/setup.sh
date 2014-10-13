@@ -98,6 +98,8 @@ brew cask install xquartz
 brew cask install wireshark
 brew cask install onepassword
 brew cask install google-drive
+brew cask install airmail-beta
+brew cask install flash
 
 # docker
 brew install boot2docker
