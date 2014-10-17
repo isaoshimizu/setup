@@ -94,9 +94,9 @@ brew cask install sublime-text3
 brew cask install macvim
 brew cask install xquartz
 brew cask install wireshark
-brew cask install google-drive
 brew cask install airmail-beta
 brew cask install flash
+brew cask install yorufukurou
 
 # docker
 brew install boot2docker
