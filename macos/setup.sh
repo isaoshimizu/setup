@@ -62,9 +62,7 @@ brew install binutils
 brew install coreutils
 brew install lv
 brew install ack
-brew install pass
 brew install s3cmd
-brew install s3fs
 brew install fping
 brew install xz
 brew install ctags
@@ -96,7 +94,6 @@ brew cask install sublime-text3
 brew cask install macvim
 brew cask install xquartz
 brew cask install wireshark
-brew cask install onepassword
 brew cask install google-drive
 brew cask install airmail-beta
 brew cask install flash
