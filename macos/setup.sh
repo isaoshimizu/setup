@@ -99,6 +99,7 @@ brew cask install wireshark
 brew cask install airmail-beta
 brew cask install flash
 brew cask install yorufukurou
+brew cask install gyazo
 
 # docker
 brew install boot2docker
