@@ -68,6 +68,8 @@ brew install xz
 brew install ctags
 brew install awscli
 brew install reattach-to-user-namespace
+brew install youtube-dl
+brew install gist
 
 # font
 brew install fontforge
@@ -132,6 +134,10 @@ ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
 git config --global push.default simple
+
+# gist login setting
+echo "input github login id,pass"
+gist --login
 
 # my config
 git pull https://github.com/isaoshimizu/config ~/config
