@@ -71,10 +71,6 @@ brew install reattach-to-user-namespace
 brew install youtube-dl
 brew install gist
 
-# font
-brew install fontforge
-brew install ricty
-
 # cask
 brew cask install iterm2
 brew cask install java7
@@ -96,10 +92,13 @@ brew cask install sublime-text3
 brew cask install macvim
 brew cask install xquartz
 brew cask install wireshark
-brew cask install airmail-beta
 brew cask install flash
 brew cask install yorufukurou
 brew cask install gyazo
+
+# font
+brew install fontforge
+brew install ricty
 
 # docker
 brew install boot2docker
@@ -111,6 +110,7 @@ brew install redis
 
 # cleanup
 brew cleanup
+brew cask cleanup
 
 # ricty
 cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
@@ -141,9 +141,17 @@ echo "input github login id,pass"
 gist --login
 
 # my config
-git pull https://github.com/isaoshimizu/config ~/config
+echo "/usr/local/bin/zsh" >> /etc/shells
+chpass -s /usr/local/bin/zsh
+
+if [ -d ~/config ]; then
+  (cd ~/config && git pull)
+else
+  git clone https://github.com/isaoshimizu/config ~/config
+fi
+
 cp -f ~/config/vimrc ~/.vimrc
-cp -Rf ~/config/vim ~/.vim
+cp -Rf ~/config/vim/* ~/.vim/
 cp -f ~/config/zshrc ~/.zshrc
 cp -f ~/config/dir_colors ~/.dir_colors
 cp -f ~/config/tmux.conf ~/.tmux.conf
