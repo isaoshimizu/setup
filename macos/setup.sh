@@ -95,6 +95,7 @@ brew cask install wireshark
 brew cask install flash
 brew cask install yorufukurou
 brew cask install gyazo
+brew cask install tagr
 
 # font
 brew install fontforge
