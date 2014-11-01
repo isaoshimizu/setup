@@ -74,7 +74,7 @@ brew install gist
 # cask
 brew cask install iterm2
 brew cask install java7
-brew cask install google-chrome
+brew cask install --caskroom=/Applications google-chrome
 brew cask install hipchat
 brew cask install vagrant
 brew cask install alfred
