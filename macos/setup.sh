@@ -75,12 +75,12 @@ brew install gist
 brew cask install iterm2
 brew cask install java7
 brew cask install --caskroom=/Applications google-chrome
+brew cask install --caskroom=/Applications firefox-ja
 brew cask install hipchat
 brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
 brew cask install virtualbox
-brew cask install firefox-ja
 brew cask install appcleaner
 brew cask install limechat
 brew cask install vlc
