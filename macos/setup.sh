@@ -96,6 +96,8 @@ brew cask install flash
 brew cask install yorufukurou
 brew cask install gyazo
 brew cask install tagr
+brew cask install dash
+brew cask install ifunbox
 
 # font
 brew install fontforge
