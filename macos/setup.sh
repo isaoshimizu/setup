@@ -98,6 +98,7 @@ brew cask install gyazo
 brew cask install tagr
 brew cask install dash
 brew cask install ifunbox
+brew cask install sqwiggle
 
 # font
 brew install fontforge
