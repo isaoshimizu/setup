@@ -117,6 +117,12 @@ brew install redis
 brew cleanup
 brew cask cleanup
 
+rehash
+
+# vagrant
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-omnibus
+
 # ricty
 cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
 fc-cache -vf
