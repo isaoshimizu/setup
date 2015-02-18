@@ -100,6 +100,7 @@ brew cask install dash
 brew cask install ifunbox
 brew cask install sqwiggle
 brew cask install adobe-reader-ja 
+brew cask install todoist
 
 # font
 brew install fontforge
