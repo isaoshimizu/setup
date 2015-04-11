@@ -101,6 +101,8 @@ brew cask install ifunbox
 brew cask install sqwiggle
 brew cask install adobe-reader-ja 
 brew cask install todoist
+brew cask install slack
+brew cask install burn
 
 # font
 brew install fontforge
