@@ -7,7 +7,7 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 
 # NeoBundle
 if [ ! -d ~/.vim/bundle ]; then
-    mkdir -p ~/.vim/bundle
+  mkdir -p ~/.vim/bundle
 fi
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
@@ -20,9 +20,9 @@ git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
 git config --global push.default simple
 
-# my config
-echo "/usr/bin/zsh" >> /etc/shells
-chpass -s /usr/local/bin/zsh
+if [ ! -d ~/tmp ]; then
+  mkdir ~/tmp
+fi
 
 if [ -d ~/config ]; then
   (cd ~/config && git pull)
