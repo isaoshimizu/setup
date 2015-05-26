@@ -25,6 +25,8 @@ brew tap homebrew/binary
 brew tap sanemat/font
 # for java, sublime-text3
 brew tap caskroom/versions
+# for rsync
+brew tap homebrew/dupes
 
 # cask
 brew install caskroom/cask/brew-cask
@@ -70,6 +72,8 @@ brew install awscli
 brew install reattach-to-user-namespace
 brew install youtube-dl
 brew install gist
+brew install libiconv
+brew install rsync
 
 # cask
 brew cask install iterm2
