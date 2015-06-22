@@ -74,6 +74,7 @@ brew install youtube-dl
 brew install gist
 brew install libiconv
 brew install rsync
+brew install peco
 
 # cask
 brew cask install iterm2
@@ -153,6 +154,8 @@ ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
 git config --global push.default simple
+git config --global alias.c 'commit -v'
+alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # gist login setting
 echo "input github login id,pass"
