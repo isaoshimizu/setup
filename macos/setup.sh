@@ -75,6 +75,7 @@ brew install gist
 brew install libiconv
 brew install rsync
 brew install peco
+brew install clipper
 
 # cask
 brew cask install iterm2
@@ -134,6 +135,10 @@ vagrant plugin install vagrant-omnibus
 # ricty
 cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
 fc-cache -vf
+
+# clipper
+ln -sfv /usr/local/opt/clipper/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.clipper.plist
 
 # rbenv
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
