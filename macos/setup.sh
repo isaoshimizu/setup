@@ -32,7 +32,6 @@ brew tap homebrew/dupes
 brew install caskroom/cask/brew-cask
 
 # language
-brew install go
 brew install npm
 
 # scm
@@ -76,6 +75,10 @@ brew install libiconv
 brew install rsync
 brew install peco
 brew install clipper
+brew install asciinema
+brew install ag
+brew install hugo
+brew install nghttp2
 
 # cask
 brew cask install iterm2
@@ -98,7 +101,6 @@ brew cask install sublime-text3
 brew cask install macvim
 brew cask install xquartz
 brew cask install wireshark
-brew cask install flash
 brew cask install yorufukurou
 brew cask install gyazo
 brew cask install tagr
@@ -109,6 +111,7 @@ brew cask install adobe-reader-ja
 brew cask install todoist
 brew cask install slack
 brew cask install burn
+brew cask install handbrake
 
 # font
 brew install fontforge
@@ -144,12 +147,12 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.clipper.plist
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+# ruby
+rbenv install 2.2.3
 
-# NeoBundle
-if [ ! -d ~/.vim/bundle ]; then
-    mkdir -p ~/.vim/bundle
-fi
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir ~/.zfunctions
 git clone https://github.com/sindresorhus/pure.git ~/pure
@@ -160,6 +163,7 @@ git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
 git config --global push.default simple
 git config --global alias.c 'commit -v'
+git config --global url."git@github.com:".insteadOf https://github.com/
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # gist login setting
@@ -183,5 +187,12 @@ cp -f ~/config/dir_colors ~/.dir_colors
 cp -f ~/config/tmux.conf ~/.tmux.conf
 cp -f ~/config/my.cnf ~/.my.cnf
 
-# vim NeoBundleInstall
-vim +":NeoBundleInstall" +:q
+# Go
+# GVM
+zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+# go get
+go get -u github.com/nsf/gocode
+go get -u github.com/golang/lint/golint
+
+# vim
+vim +":PlugInstall" +:q

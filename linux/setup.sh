@@ -5,11 +5,9 @@ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# NeoBundle
-if [ ! -d ~/.vim/bundle ]; then
-  mkdir -p ~/.vim/bundle
-fi
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir ~/.zfunctions
 git clone https://github.com/sindresorhus/pure.git ~/pure
@@ -37,5 +35,5 @@ cp -f ~/config/dir_colors ~/.dir_colors
 cp -f ~/config/tmux.conf ~/.tmux.conf
 cp -f ~/config/my.cnf ~/.my.cnf
 
-# vim NeoBundleInstall
-vim +":NeoBundleInstall" +:q
+# vim
+vim +":PlugInstall" +:q
