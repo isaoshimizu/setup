@@ -158,12 +158,18 @@ mkdir ~/.zfunctions
 git clone https://github.com/sindresorhus/pure.git ~/pure
 ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 
+# diff-highlight
+mkdir ~/bin
+GIT_PATH=/usr/local/Cellar/git/$(/bin/ls -t /usr/local/Cellar/git | head -n 1)
+ln -sf $GIT_PATH/share/git-core/contrib/diff-highlight/diff-highlight ~/bin/diff-highlight
+
 # git config
 git config --global user.name "Isao SHIMIZU"
 git config --global user.email "isaoshimizu@gmail.com"
 git config --global push.default simple
 git config --global alias.c 'commit -v'
 git config --global url."git@github.com:".insteadOf https://github.com/
+git config --global core.pager "zsh -c 'diff-highlight | strip_diff_leading_symbols | less -r'"
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # gist login setting
@@ -180,12 +186,13 @@ else
   git clone https://github.com/isaoshimizu/config ~/config
 fi
 
-cp -f ~/config/vimrc ~/.vimrc
+ln -sf ~/config/vimrc ~/.vimrc
 cp -Rf ~/config/vim/* ~/.vim/
-cp -f ~/config/zshrc ~/.zshrc
-cp -f ~/config/dir_colors ~/.dir_colors
-cp -f ~/config/tmux.conf ~/.tmux.conf
-cp -f ~/config/my.cnf ~/.my.cnf
+ln -sf ~/config/zshrc ~/.zshrc
+ln -sf ~/config/zshenv ~/.zshenv
+ln -sf ~/config/dir_colors ~/.dir_colors
+ln -sf ~/config/tmux.conf ~/.tmux.conf
+ln -sf ~/config/my.cnf ~/.my.cnf
 
 # Go
 # GVM
