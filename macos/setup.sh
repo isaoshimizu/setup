@@ -107,18 +107,16 @@ brew cask install tagr
 brew cask install dash
 brew cask install ifunbox
 brew cask install sqwiggle
-brew cask install adobe-reader-ja 
+brew cask install adobe-reader-ja
 brew cask install todoist
 brew cask install slack
 brew cask install burn
 brew cask install handbrake
+brew cask install dockertoolbox
 
 # font
 brew install fontforge
 brew install ricty
-
-# docker
-brew install boot2docker
 
 # middleware
 brew install mysql
