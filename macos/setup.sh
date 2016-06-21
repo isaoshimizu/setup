@@ -80,6 +80,7 @@ brew install asciinema
 brew install ag
 brew install hugo
 brew install nghttp2
+brew install keychain
 
 # cask
 brew cask install iterm2
@@ -121,6 +122,7 @@ brew install ricty
 
 # middleware
 brew install homebrew/versions/mysql55
+brew link mysql55 --force
 brew install postgresql
 brew install memcached
 brew install redis
