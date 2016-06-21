@@ -32,7 +32,8 @@ brew tap homebrew/dupes
 brew install caskroom/cask/brew-cask
 
 # language
-brew install npm
+curl -L git.io/nodebrew | perl - setup
+brew install elixir
 
 # scm
 brew install git
@@ -82,7 +83,7 @@ brew install nghttp2
 
 # cask
 brew cask install iterm2
-brew cask install java7
+brew cask install java
 brew cask install --caskroom=/Applications google-chrome
 brew cask install --caskroom=/Applications firefox-ja
 brew cask install hipchat
@@ -119,7 +120,8 @@ brew install fontforge
 brew install ricty
 
 # middleware
-brew install mysql
+brew install homebrew/versions/mysql55
+brew install postgresql
 brew install memcached
 brew install redis
 
@@ -136,6 +138,10 @@ vagrant plugin install vagrant-omnibus
 # ricty
 cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
 fc-cache -vf
+
+# Source Code Pro Powerline
+git clone https://github.com/powerline/fonts ~/fonts
+~/fonts/install.sh
 
 # clipper
 ln -sfv /usr/local/opt/clipper/*.plist ~/Library/LaunchAgents
@@ -155,6 +161,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 mkdir ~/.zfunctions
 git clone https://github.com/sindresorhus/pure.git ~/pure
 ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
+ln -s "$HOME/pure/async.zsh" /usr/local/share/zsh/site-functions/async
 
 # diff-highlight
 mkdir ~/bin
