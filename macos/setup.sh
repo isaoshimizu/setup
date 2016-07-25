@@ -192,7 +192,7 @@ ln -sf ~/config/my.cnf ~/.my.cnf
 
 # Go
 # GVM
-zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+bash -c "bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)"
 # go get
 go get -u github.com/nsf/gocode
 go get -u github.com/golang/lint/golint
