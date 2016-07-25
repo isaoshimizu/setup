@@ -87,34 +87,23 @@ brew cask install iterm2
 brew cask install java
 brew cask install --caskroom=/Applications google-chrome
 brew cask install --caskroom=/Applications firefox-ja
-brew cask install hipchat
 brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
 brew cask install virtualbox
 brew cask install appcleaner
-brew cask install limechat
 brew cask install vlc
 brew cask install skype
-brew cask install xtrafinder
-brew cask install evernote
-brew cask install skitch
 brew cask install sublime-text3
-brew cask install macvim
-brew cask install xquartz
 brew cask install wireshark
-brew cask install yorufukurou
 brew cask install gyazo
-brew cask install tagr
 brew cask install dash
 brew cask install ifunbox
 brew cask install sqwiggle
 brew cask install adobe-reader-ja
-brew cask install todoist
 brew cask install slack
 brew cask install burn
 brew cask install handbrake
-brew cask install dockertoolbox
 
 # font
 brew install fontforge
