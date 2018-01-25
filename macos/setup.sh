@@ -81,7 +81,7 @@ brew install keychain
 brew cask install iterm2
 brew cask install java
 brew cask install --caskroom=/Applications google-chrome
-brew cask install --caskroom=/Applications firefox-ja
+brew cask install --caskroom=/Applications firefox --language=ja
 brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
@@ -94,6 +94,9 @@ brew cask install wireshark
 brew cask install dash
 brew cask install adobe-reader-ja
 brew cask install burn
+brew cask install google-cloud-sdk
+brew cask install visual-studio-code
+brew cask install flux
 
 # font
 brew install fontforge
