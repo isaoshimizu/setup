@@ -31,10 +31,6 @@ brew tap homebrew/dupes
 # cask
 brew install caskroom/cask/brew-cask
 
-# language
-curl -L git.io/nodebrew | perl - setup
-brew install elixir
-
 # scm
 brew install git
 brew install hub
@@ -64,7 +60,6 @@ brew install binutils
 brew install coreutils
 brew install lv
 brew install ack
-brew install s3cmd
 brew install fping
 brew install xz
 brew install ctags
@@ -96,23 +91,15 @@ brew cask install vlc
 brew cask install skype
 brew cask install sublime-text3
 brew cask install wireshark
-brew cask install gyazo
 brew cask install dash
-brew cask install ifunbox
-brew cask install sqwiggle
 brew cask install adobe-reader-ja
-brew cask install slack
 brew cask install burn
-brew cask install handbrake
 
 # font
 brew install fontforge
 brew install ricty
 
 # middleware
-brew install homebrew/versions/mysql55
-brew link mysql55 --force
-brew install postgresql
 brew install memcached
 brew install redis
 
@@ -143,7 +130,7 @@ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 # ruby
-rbenv install 2.2.3
+rbenv install 2.5.0
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -191,8 +178,7 @@ ln -sf ~/config/tmux.conf ~/.tmux.conf
 ln -sf ~/config/my.cnf ~/.my.cnf
 
 # Go
-# GVM
-bash -c "bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)"
+brew install go
 # go get
 go get -u github.com/nsf/gocode
 go get -u github.com/golang/lint/golint
