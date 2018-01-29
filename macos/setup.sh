@@ -97,6 +97,7 @@ brew cask install burn
 brew cask install google-cloud-sdk
 brew cask install visual-studio-code
 brew cask install flux
+brew cask install kindle
 
 # font
 brew install fontforge
