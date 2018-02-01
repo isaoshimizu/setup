@@ -2,8 +2,8 @@
 
 ## manual install:
 # Google日本語入力: http://www.google.co.jp/ime/
-# QuickLock http://www.quicklockapp.com/
 ## AppStore
+# 1Password
 # LINE
 # Keynote
 
@@ -27,6 +27,8 @@ brew tap sanemat/font
 brew tap caskroom/versions
 # for rsync
 brew tap homebrew/dupes
+# for source-code-pro font
+brew tap caskroom/fonts
 
 # cask
 brew install caskroom/cask/brew-cask
@@ -42,7 +44,6 @@ brew install zsh
 
 # editor
 brew install vim
-brew install emacs
 
 # utility
 brew install curl
@@ -76,12 +77,13 @@ brew install ag
 brew install hugo
 brew install nghttp2
 brew install keychain
+brew install ghq
 
 # cask
 brew cask install iterm2
 brew cask install java
-brew cask install --caskroom=/Applications google-chrome
-brew cask install --caskroom=/Applications firefox --language=ja
+brew cask install google-chrome
+brew cask install firefox --language=ja
 brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
@@ -98,10 +100,13 @@ brew cask install google-cloud-sdk
 brew cask install visual-studio-code
 brew cask install flux
 brew cask install kindle
+brew cask install authy
 
 # font
 brew install fontforge
 brew install ricty
+brew cask install font-source-code-pro
+
 
 # middleware
 brew install memcached
