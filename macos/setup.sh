@@ -78,10 +78,11 @@ brew install hugo
 brew install nghttp2
 brew install keychain
 brew install ghq
+brew install gnu-sed
 
 # cask
 brew cask install iterm2
-brew cask install java
+brew cask install java8
 brew cask install google-chrome
 brew cask install firefox --language=ja
 brew cask install vagrant
@@ -101,12 +102,16 @@ brew cask install visual-studio-code
 brew cask install flux
 brew cask install kindle
 brew cask install authy
+brew cask install android-studio
 
 # font
 brew install fontforge
 brew install ricty
 brew cask install font-source-code-pro
 
+# iOS
+brew install carthage
+brew install swiftlint
 
 # middleware
 brew install memcached
