@@ -67,6 +67,7 @@ brew install ctags
 brew install awscli
 brew install reattach-to-user-namespace
 brew install youtube-dl
+brew install ffmpeg
 brew install gist
 brew install libiconv
 brew install rsync
