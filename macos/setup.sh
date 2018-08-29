@@ -70,6 +70,7 @@ brew install ctags
 brew install awscli
 brew install reattach-to-user-namespace
 brew install youtube-dl
+brew install ffmpeg
 brew install gist
 brew install libiconv
 brew install rsync
@@ -83,6 +84,7 @@ brew install keychain
 brew install ghq
 brew install terraform
 brew install imagemagick
+brew install gnu-sed
 
 # cask
 brew cask install iterm2
@@ -110,11 +112,15 @@ brew cask install docker-edge
 brew cask install android-studio
 brew cask install musescore
 
+
 # font
 brew install fontforge
 brew install ricty
 brew cask install font-source-code-pro
 
+# iOS
+brew install carthage
+brew install swiftlint
 
 # middleware
 brew install memcached
