@@ -49,7 +49,10 @@ brew install vim
 brew install curl
 brew install autoconf
 brew install automake
+brew install carthage
 brew install cmake
+brew install direnv
+brew install ffmpeg
 brew install tree
 brew install tmux
 brew install nkf
@@ -78,12 +81,14 @@ brew install hugo
 brew install nghttp2
 brew install keychain
 brew install ghq
+brew install terraform
+brew install imagemagick
 
 # cask
 brew cask install iterm2
-brew cask install java
+brew cask install java8
 brew cask install google-chrome
-brew cask install firefox --language=ja
+brew cask install firefox
 brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
@@ -91,16 +96,19 @@ brew cask install virtualbox
 brew cask install appcleaner
 brew cask install vlc
 brew cask install skype
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install wireshark
 brew cask install dash
-brew cask install adobe-reader-ja
 brew cask install burn
 brew cask install google-cloud-sdk
 brew cask install visual-studio-code
 brew cask install flux
 brew cask install kindle
 brew cask install authy
+brew cask install marp
+brew cask install docker-edge
+brew cask install android-studio
+brew cask install musescore
 
 # font
 brew install fontforge
@@ -162,6 +170,7 @@ git config --global push.default simple
 git config --global alias.c 'commit -v'
 git config --global url."git@github.com:".insteadOf https://github.com/
 git config --global core.pager "zsh -c 'diff-highlight | strip_diff_leading_symbols | less -r'"
+git config --global ghq.root ~/src
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
 # gist login setting
