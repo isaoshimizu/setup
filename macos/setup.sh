@@ -155,10 +155,13 @@ rbenv install 2.5.0
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# zsh
 mkdir ~/.zfunctions
 git clone https://github.com/sindresorhus/pure.git ~/pure
 ln -s "$HOME/pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
 ln -s "$HOME/pure/async.zsh" /usr/local/share/zsh/site-functions/async
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/zsh-autosuggestions
 
 # diff-highlight
 mkdir ~/bin
