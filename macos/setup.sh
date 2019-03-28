@@ -98,20 +98,16 @@ brew cask install virtualbox
 brew cask install appcleaner
 brew cask install vlc
 brew cask install skype
-brew cask install sublime-text
 brew cask install wireshark
 brew cask install dash
-brew cask install burn
 brew cask install google-cloud-sdk
 brew cask install visual-studio-code
 brew cask install flux
 brew cask install kindle
 brew cask install authy
 brew cask install marp
-brew cask install docker-edge
-brew cask install android-studio
+brew cask install docker
 brew cask install musescore
-
 
 # font
 brew install fontforge
@@ -170,7 +166,7 @@ GIT_PATH=/usr/local/Cellar/git/$(/bin/ls -t /usr/local/Cellar/git | head -n 1)
 ln -sf $GIT_PATH/share/git-core/contrib/diff-highlight/diff-highlight ~/bin/diff-highlight
 
 # git config
-git config --global user.name "Isao SHIMIZU"
+git config --global user.name "Isao Shimizu"
 git config --global user.email "isaoshimizu@gmail.com"
 git config --global push.default simple
 git config --global alias.c 'commit -v'
