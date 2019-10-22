@@ -37,7 +37,6 @@ brew install caskroom/cask/brew-cask
 brew install git
 brew install hub
 brew install tig
-brew install mercurial
 
 # shell
 brew install zsh
@@ -49,7 +48,6 @@ brew install vim
 brew install curl
 brew install autoconf
 brew install automake
-brew install carthage
 brew install cmake
 brew install direnv
 brew install ffmpeg
@@ -70,7 +68,6 @@ brew install ctags
 brew install awscli
 brew install reattach-to-user-namespace
 brew install youtube-dl
-brew install ffmpeg
 brew install gist
 brew install libiconv
 brew install rsync
@@ -88,7 +85,6 @@ brew install gnu-sed
 
 # cask
 brew cask install iterm2
-brew cask install java8
 brew cask install google-chrome
 brew cask install firefox
 brew cask install vagrant
@@ -149,7 +145,7 @@ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 # ruby
-rbenv install 2.5.0
+rbenv install 2.6.5
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -199,12 +195,11 @@ ln -sf ~/config/zshenv ~/.zshenv
 ln -sf ~/config/dir_colors ~/.dir_colors
 ln -sf ~/config/tmux.conf ~/.tmux.conf
 ln -sf ~/config/my.cnf ~/.my.cnf
+mkdir -p ~/.config/alacritty/
+ln -sf ~/config/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # Go
 brew install go
-# go get
-go get -u github.com/nsf/gocode
-go get -u github.com/golang/lint/golint
 
 # vim
 vim +":PlugInstall" +:q
