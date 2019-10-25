@@ -3,10 +3,8 @@
 ## manual install:
 # Google日本語入力: http://www.google.co.jp/ime/
 ## AppStore
-# 1Password
 # LINE
 # Keynote
-
 
 if [ ! -d /Applications/Xcode.app ]; then
     echo "Please Install Xcode first."
@@ -19,19 +17,15 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 brew upgrade
 
-# tap
-brew tap homebrew/binary
 # for Ricty
 brew tap sanemat/font
 # for java, sublime-text3
-brew tap caskroom/versions
-# for rsync
-brew tap homebrew/dupes
+brew tap homebrew/cask-versions
 # for source-code-pro font
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 
 # cask
-brew install caskroom/cask/brew-cask
+brew tap homebrew/cask-cask
 
 # scm
 brew install git
@@ -84,6 +78,8 @@ brew install imagemagick
 brew install gnu-sed
 
 # cask
+brew cask install 1password
+brew cask install slack
 brew cask install iterm2
 brew cask install google-chrome
 brew cask install firefox
