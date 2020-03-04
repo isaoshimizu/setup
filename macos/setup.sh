@@ -100,6 +100,7 @@ brew cask install authy
 brew cask install marp
 brew cask install docker
 brew cask install musescore
+brew cask install kitty
 
 # font
 brew install fontforge
@@ -193,6 +194,7 @@ ln -sf ~/config/tmux.conf ~/.tmux.conf
 ln -sf ~/config/my.cnf ~/.my.cnf
 mkdir -p ~/.config/alacritty/
 ln -sf ~/config/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -sf ~/config/kitty.conf ~/.config/kitty/kitty.conf
 
 # Go
 brew install go
