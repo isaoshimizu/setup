@@ -76,17 +76,15 @@ brew install ghq
 brew install terraform
 brew install imagemagick
 brew install gnu-sed
+brew install remind101/formulae/assume-role
 
 # cask
 brew cask install 1password
 brew cask install slack
-brew cask install iterm2
 brew cask install google-chrome
 brew cask install firefox
-brew cask install vagrant
 brew cask install alfred
 brew cask install dropbox
-brew cask install virtualbox
 brew cask install appcleaner
 brew cask install vlc
 brew cask install skype
