@@ -77,6 +77,8 @@ brew install terraform
 brew install imagemagick
 brew install gnu-sed
 brew install remind101/formulae/assume-role
+brew install urlview
+brew install extract_url
 
 # cask
 brew cask install 1password
@@ -198,3 +200,7 @@ brew install go
 
 # vim
 vim +":PlugInstall" +:q
+
+# tmux
+mkdir -p ~/.tmux/plugins
+ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
