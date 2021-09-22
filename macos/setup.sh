@@ -1,28 +1,14 @@
 #!/bin/sh
 
-## manual install:
-# Google日本語入力: http://www.google.co.jp/ime/
-## AppStore
-# LINE
-# Keynote
-
 if [ ! -d /Applications/Xcode.app ]; then
     echo "Please Install Xcode first."
     exit
 fi
 
 # brew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew update
 brew upgrade
-
-# for Ricty
-brew tap sanemat/font
-# for java, sublime-text3
-brew tap homebrew/cask-versions
-# for source-code-pro font
-brew tap homebrew/cask-fonts
 
 # cask
 brew tap homebrew/cask-cask
@@ -39,73 +25,62 @@ brew install zsh
 brew install vim
 
 # utility
-brew install curl
+brew install asciinema
 brew install autoconf
 brew install automake
-brew install cmake
-brew install direnv
-brew install ffmpeg
-brew install tree
-brew install tmux
-brew install nkf
-brew install wget
-brew install readline
-brew install openssl
-brew install jq
-brew install binutils
-brew install coreutils
-brew install lv
-brew install ack
-brew install fping
-brew install xz
-brew install ctags
 brew install awscli
+brew install binutils
+brew install clipper
+brew install cmake
+brew install coreutils
+brew install curl
+brew install direnv
+brew install extract_url
+brew install ffmpeg
+brew install ghq
+brew install gnu-sed
+brew install helm
+brew install heroku
+brew install hugo
+brew install imagemagick
+brew install jq
+brew install kubectx
+brew install kubernetes-cli
+brew install nkf
+brew install openssl
+brew install peco
+brew install readline
+brew install stern
+brew install tfenv
+brew install the_silver_searcher
+brew install tig
+brew install tmux
+brew install wget
 brew install reattach-to-user-namespace
 brew install youtube-dl
-brew install gist
-brew install libiconv
-brew install rsync
-brew install peco
-brew install clipper
-brew install asciinema
-brew install ag
-brew install hugo
-brew install nghttp2
-brew install keychain
-brew install ghq
-brew install terraform
-brew install imagemagick
-brew install gnu-sed
-brew install remind101/formulae/assume-role
-brew install urlview
-brew install extract_url
 
 # cask
-brew cask install 1password
-brew cask install slack
-brew cask install google-chrome
-brew cask install firefox
-brew cask install alfred
-brew cask install dropbox
-brew cask install appcleaner
-brew cask install vlc
-brew cask install skype
-brew cask install wireshark
-brew cask install dash
-brew cask install google-cloud-sdk
-brew cask install visual-studio-code
-brew cask install flux
-brew cask install kindle
-brew cask install authy
-brew cask install marp
-brew cask install docker
-brew cask install musescore
-brew cask install kitty
+brew install 1password
+brew install alfred
+brew install appcleaner
+brew install authy
+brew install drawio
+brew install firefox
+brew install google-chrome
+brew install iterm2
+brew install jetbrain-toolbox
+brew install kindle
+brew install lens
+brew install microsoft-edge
+brew install ngrok
+brew install notion
+brew install slack
+brew install vlc
+brew install visual-studio-code
+brew install zoom
 
 # font
-brew install fontforge
-brew install ricty
-brew cask install font-source-code-pro
+brew install font-source-code-pro
 
 # iOS
 brew install carthage
@@ -117,21 +92,8 @@ brew install redis
 
 # cleanup
 brew cleanup
-brew cask cleanup
 
 rehash
-
-# vagrant
-vagrant plugin install vagrant-vbguest
-vagrant plugin install vagrant-omnibus
-
-# ricty
-cp -f /usr/local/Cellar/ricty/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
-fc-cache -vf
-
-# Source Code Pro Powerline
-git clone https://github.com/powerline/fonts ~/fonts
-~/fonts/install.sh
 
 # clipper
 ln -sfv /usr/local/opt/clipper/*.plist ~/Library/LaunchAgents
@@ -141,8 +103,6 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.clipper.plist
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-# ruby
-rbenv install 2.6.5
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -171,10 +131,6 @@ git config --global core.pager "zsh -c 'diff-highlight | strip_diff_leading_symb
 git config --global ghq.root ~/src
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
-# gist login setting
-echo "input github login id,pass"
-gist --login
-
 # my config
 echo "/usr/local/bin/zsh" >> /etc/shells
 chpass -s /usr/local/bin/zsh
@@ -192,9 +148,6 @@ ln -sf ~/config/zshenv ~/.zshenv
 ln -sf ~/config/dir_colors ~/.dir_colors
 ln -sf ~/config/tmux.conf ~/.tmux.conf
 ln -sf ~/config/my.cnf ~/.my.cnf
-mkdir -p ~/.config/alacritty/
-ln -sf ~/config/alacritty.yml ~/.config/alacritty/alacritty.yml
-ln -sf ~/config/kitty.conf ~/.config/kitty/kitty.conf
 
 # Go
 brew install go
